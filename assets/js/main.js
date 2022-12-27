@@ -1,7 +1,10 @@
 document.addEventListener("DOMContentLoaded", main);
 function main() {
-	document.querySelector(".loading-splash").classList.add("hidden");
-	document.querySelector("body").classList.add("loaded");
+	window.onload = () => {
+		document.querySelector(".loading-splash").classList.add("hidden");
+		document.querySelector("body").classList.add("loaded");
+	};
+
 	// FLATPICKR
 	flatpickr('input[type="date"]', {
 		dateFormat: "M d, y",
