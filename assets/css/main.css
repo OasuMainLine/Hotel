@@ -21277,7 +21277,7 @@ p {
 }
 
 .loading-splash.hidden {
-  animation: hide 500ms ease-in 1 forwards;
+  animation: hide 500ms 2s ease-in 1 forwards;
 }
 
 @keyframes hide {
