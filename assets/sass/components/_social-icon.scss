@@ -1,0 +1,54 @@
+$websites: (
+	"facebook": color("facebook-blue"),
+	"tripadvisor": color("tripadvisor-green"),
+);
+
+@each $website, $color in $websites {
+	.social-icon-#{$website} {
+		width: pxToRem(36);
+		height: pxToRem(36);
+		display: block;
+		border-radius: $border-full;
+		overflow: hidden;
+		position: relative;
+		background-color: $color;
+		padding: 0.1rem;
+		// box-shadow: inset 0px 0px 0px 3px color("white");
+		transition: transform ease-in-out 350ms;
+		&:hover {
+			transform: rotate(360deg);
+		}
+		&::before {
+			content: "";
+			border-radius: $border-full;
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+			background-color: color("white");
+			transition: transform ease-in-out 350ms;
+		}
+		&:hover::before {
+			transform: scale(0);
+		}
+		img {
+			width: 100%;
+			height: 100%;
+			position: relative;
+			padding: 0.2rem;
+		}
+	}
+}
+
+.lan-icon {
+	color: color("white");
+	cursor: pointer;
+	font-size: font-size("smaller");
+	font-weight: bold;
+	height: fit-content;
+	transition: color ease-in 150ms;
+	&:hover {
+		color: color("light-blue");
+	}
+}

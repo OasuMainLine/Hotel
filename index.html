@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Home page of Los Pinos Lodge">
+    <meta name="keywords" content="travel, monteverde, tourism">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
+    <link rel="stylesheet" href="assets/css/main.css">
+
+    <!-- vendors -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- vendors/ -->
+
+    <script src="/assets/js/main.js" type="module"></script>
+    <title>Home</title>
+</head>
+
+<body>
+    <main class="w-100 m-0 p-0 position-relative index overflow-hidden">
+        <!-- HEADER -->
+        <header id="header-section" class="row position-relative header">
+            <!-- NAV -->
+
+            <nav class="default-nav">
+
+                <div class="mobile-navbar">
+                    <a href="/index.html">
+                        <img class="logo" src="/assets/images/logos/12-2022_Los_Pinos_Logo.jpg" alt="Logo los pinos" />
+                    </a>
+                    <div class="d-flex gap-3 align-items-center">
+
+                        <span class="lan-icon">ES</span>
+
+                        <a href="https://facebook.com" title="LINK TO OUR FACEBOOK">
+                            <i class="social-icon-facebook">
+                                <img src="/assets/images/icons/12-2022-facebook_icon.png" alt="Facebook Icon Button">
+                            </i>
+                        </a>
+
+
+                        <a href="https://www.tripadvisor.es" title="LINK TO OUR TRIPADVISOR PROFILE">
+                            <i class="social-icon-tripadvisor">
+                                <img src="/assets/images/icons/12-2022-tripadvisor_icon.png"
+                                    alt="TripAdvisor Icon Button">
+                            </i>
+                        </a>
+
+                        <label class="trigger-label d-md-none" for="nav-trigger">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="white"
+                                class="bi bi-list menu" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                            </svg>
+                        </label>
+
+                    </div>
+
+                </div>
+
+                <input type="checkbox" name="" id="nav-trigger" class="d-none">
+                <ul class="default-nav-links">
+                    <li class="link"><a href="/pages/room_rates.html">Rooms & rates</a></li>
+                    <li class="link"><a href="/pages/reserve.html">Reserve</a></li>
+
+                    <li class="d-none d-md-block">
+                        <a href="/index.html">
+                            <img class="logo" src="/assets/images/logos/12-2022_Los_Pinos_Logo.jpg"
+                                alt="Logo los pinos" />
+                        </a>
+                    </li>
+
+                    <li class="link"><a href="/pages/sustainability.html">Sustainability</a></li>
+                    <li class="link">
+                        <a href="/pages/activities.html">
+                            Activities
+                        </a>
+                    </li>
+
+                </ul>
+
+                <div class="default-nav-social">
+                    <ul>
+                        <li class="lan-icon" aria-label="Language button | Spanish">ES</li>
+                        <li>
+                            <a href="https://facebook.com">
+                                <i class="social-icon-facebook">
+                                    <img src="/assets/images/icons/12-2022-facebook_icon.png"
+                                        alt="Facebook Icon Button">
+                                </i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.tripadvisor.es">
+                                <i class="social-icon-tripadvisor">
+                                    <img src="/assets/images/icons/12-2022-tripadvisor_icon.png"
+                                        alt="TripAdvisor Icon Button">
+                                </i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <!-- HEADER CONTENT -->
+
+            <div class="splide" aria-label="Header images">
+                <div class="splide__track">
+                    <div class="splide__list">
+                        <div class="splide__slide">
+                            <img src="/assets/images/pages/index/12-2022_hero_img.webp" alt="">
+                        </div>
+
+                        <div class="splide__slide">
+                            <img src="/assets/images/pages/index/12-2022_hero_img.webp" alt="">
+                        </div>
+
+                        <div class="splide__slide">
+                            <img src="/assets/images/pages/index/12-2022_hero_img.webp" alt="">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="content col-12 text-center position-relative">
+                <h1>
+                    When staying with us
+                </h1>
+                <p>We'll make sure you'll never want anything else</p>
+            </div>
+
+            <form class="header-availability-box" role="form" aria-label="Availability of rooms search form">
+                <div class="availability-box-container">
+                    <div class="availability-box-inner">
+                        <label class="title" for="checkin-1">Check In</label>
+                        <div class="date">
+                            <img src="/assets/images/icons/12-2022-calendar_icon.png" alt="Calendar icon">
+                            <input type="date" name="checkInDate" id="checkin-1" placeholder="-- --, ----">
+                        </div>
+                    </div>
+                    <span class="divider"></span>
+                    <div class="availability-box-inner">
+                        <label class="title" for="checkout-1">Check Out</label>
+                        <div class="date">
+                            <img src="/assets/images/icons/12-2022-calendar_icon.png" alt="Calendar icon">
+                            <input type="date" name="checkOutDate" id="checkout-1" placeholder="-- --, ----">
+                        </div>
+                    </div>
+
+                </div>
+                <label class="search-btn" href="#" for="submit-date-1">
+                    Search <br> now
+                </label>
+
+                <input type="submit" aria-valuetext="Send booking date" class="d-none" id="submit-date-1">
+            </form>
+        </header>
+
+
+        <section id="about-section" class="row position-relative">
+            <div class="logo">
+                <img src="/assets/images/logos/logo AI Los Pinos.png" alt="Logo los pinos" data-aos="fade-in">
+            </div>
+
+            <div class="about-content" data-aos="fade-in">
+                <p>
+                    Established in 1987, our family-friendly and highly sustainable lodging facilities are now a
+                    reference
+                    in the area.
+                </p>
+                <p>
+                    Enjoy our fully equipped cabins, immersed in mind-soothing nature, surrounded by beautiful native
+                    gardens and exuberant forest, built far apart from each other for extreme privacy and equipped with
+                    all
+                    cooking essentials. Explore our 8 hectare private reserve and/or spot wildlife right outside your
+                    window! All while being close to all the awesome activities that Monteverde has to offer.
+                </p>
+            </div>
+
+            <div class="certificates">
+                <img src="/assets/images/certificates/2019-04-22-PRO-Esencial-CR-somos-insumos-17.png"
+                    alt="Pro esencial certificate" data-aos="flip-left">
+                <img src="/assets/images/certificates/12-2022_turismo_sostenible.jpg"
+                    alt="Sustainable tourism certificate" data-aos="flip-left" data-aos-delay="200">
+                <img src="/assets/images/certificates/12-2022_pyme_cert.jpg" alt="PYMES certificate"
+                    data-aos="flip-left" data-aos-delay="300">
+                <img src="/assets/images/certificates/12-2022_code_of_conduct.jpg" alt="Code of conduct certificate"
+                    data-aos="flip-left" data-aos-delay="400">
+            </div>
+            <img src="/assets/images/plants/12-2022_plant3.png" alt="" class="plant plant-sm obj-left bottom-0 start-0"
+                data-aos="fade-right">
+
+            <a href="#" class="section-btn my-5">Learn More About Us</a>
+        </section>
+        <div class="icon-divider row bg-black position-relative">
+            <ul class="row-cols-5 flex-column flex-md-row align-items-center">
+                <li class="">
+                    <img src="/assets/images/icons/12-2022_house_icon.png" alt="Cabins Icon">
+                    <h2 data-aos="fade-up">Cabins</h2>
+                </li>
+
+                <li>
+                    <img src="/assets/images/icons/12-2022_forest-icon.png" alt="Reserve Icon">
+                    <h2 data-aos="fade-up">Reserve</h2>
+                </li>
+
+
+                <li>
+                    <img src="/assets/images/icons/12-2022_plant_icon.png" alt="Plant Icon">
+                    <h2 data-aos="fade-up">Sustainability</h2>
+                </li>
+            </ul>
+
+            <img src="/assets/images/plants/12-2022_plant2.png" alt="" class="plant plant-xxl end-0 -b-120 obj-right"
+                data-aos="fade-left">
+        </div>
+
+        <section id="cabins-section" class="row justify-content-center">
+            <div class="section-card">
+                <div class="card-image masked-image" data-aos="fade-right">
+                    <img src="/assets/images/pages/index/12-2022_cabins_1.webp" alt="">
+                </div>
+                <div class="content" data-aos="fade-in">
+                    <h2>Our cabins</h2>
+                    <p>Imagine waking up,<br> opening your window <br> and being blinded by nature.</p>
+                    <a href="#" class="section-btn">
+                        Learn more
+                    </a>
+                </div>
+            </div>
+
+            <div class="cabins-grid">
+                <p class="" data-aos="flip-left" data-aos-anchor-placement="top-center">All our cabins offer a space
+                    where you can spread out and feel
+                    completely at ease. We’ll
+                    make sure
+                    you’ll never want anything else when staying with us.</p>
+                <div class="card" data-aos="flip-left" data-aos-delay="100" data-aos-anchor-placement="top-center">
+                    <a href="/pages/room_rates.html#standard-cabins" title="ROOMS AND RATES | STANDARD CABINS">
+                        <img src="/assets/images/pages/index/12-2022_standard.webp" alt=""
+                            title="ROOMS AND RATES | STANDARD CABINS">
+                    </a>
+                    <h3>Standard</h3>
+                    <span>View details</span>
+                </div>
+                <div class="card" data-aos="flip-left" data-aos-delay="200" data-aos-anchor-placement="top-center">
+                    <a href="/pages/room_rates.html#junior-cabins" title="ROOMS AND RATES | JUNIOR CABINS">
+                        <img src="/assets/images/pages/index/12-2022_junior.webp" alt=""
+                            title="ROOMS AND RATES | JUNIOR CABINS">
+                    </a>
+                    <h3>Junior</h3>
+                    <span>View details</span>
+                </div>
+                <div class="card" data-aos="flip-left" data-aos-anchor-placement="top-center">
+                    <a href="/pages/room_rates.html#superior-cabins" title="ROOMS AND RATES | SUPERIOR CABINS">
+                        <img src="/assets/images/pages/index/12-2022_superior.webp" alt=""
+                            title="ROOMS AND RATES | SUPERIOR CABINS">
+                    </a>
+                    <h3>Superior</h3>
+                    <span>View details</span>
+                </div>
+                <div class="card" data-aos="flip-left" data-aos-delay="100" data-aos-anchor-placement="top-center">
+                    <a href="/pages/room_rates.html#family-cabins" title="ROOMS AND RATES | FAMILY CABINS">
+                        <img src="/assets/images/pages/index/12-2022_family.webp" alt=""
+                            title="ROOMS AND RATES | FAMILY CABINS">
+                    </a>
+                    <h3>Family</h3>
+                    <span>View details</span>
+                </div>
+                <div class="card" data-aos="flip-left" data-aos-delay="200" data-aos-anchor-placement="top-center">
+                    <a href="/pages/room_rates.html#family-deluxe-cabins"
+                        title="ROOMS AND RATES | FAMILY DELUXE CABINS">
+                        <img src="/assets/images/pages/index/12-2022_family_deluxe.webp" alt=""
+                            title="ROOMS AND RATES | FAMILY DELUXE CABINS">
+                    </a>
+                    <h3>Family Deluxe</h3>
+                    <span>View details</span>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-center my-5 availability-box-wrapper">
+                <form class="availability-box ">
+
+                    <div class="availability-box-container">
+                        <div class="availability-box-inner">
+                            <label class="title" for="checkin-2">Check In</label>
+                            <div class="date">
+                                <img src="/assets/images/icons/12-2022-calendar_icon.png" alt="Icon de calendario">
+                                <input type="date" name="checkInDate" id="checkin-2" placeholder="-- --, ----">
+                            </div>
+                        </div>
+                        <span class="divider"></span>
+                        <div class="availability-box-inner">
+                            <label class="title" for="checkout-2">Check Out</label>
+                            <div class="date">
+                                <img src="/assets/images/icons/12-2022-calendar_icon.png" alt="Icon de calendario">
+                                <input type="date" name="checkOutDate" id="checkout-2" placeholder="-- --, ----">
+                            </div>
+                        </div>
+                    </div>
+
+                    <label class="search-btn" href="#" for="submit-date-2">
+                        Search <br> now
+                    </label>
+
+                    <input type="submit" value="" class="d-none" id="submit-date-2">
+                </form>
+
+            </div>
+        </section>
+
+        <section id="review-section">
+
+            <div class="splide review-carousel position-relative overflow-hidden" data-splide='{"gap": "10rem"}'
+                aria-label="Reviews of our clients" data-aos="fade-in">
+                <img src="/assets/images/plants/12-2022_plant1.png" alt=""
+                    class="plant -l-20 top-0 obj-left d-none d-md-block">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            <div class="review-card">
+                                <div class="content">
+                                    <div class="content-header">
+                                        <h4>DaveWI</h4>
+                                        <p>Charleston, West Virginia</p>
+                                    </div>
+                                    <p class="text">Here in height of rainy season, mid october. Beautiful setting
+                                        in
+                                        the
+                                        jungle,
+                                        walking trails and
+                                        the
+                                        hydroponic garden (mostly greens, herbs). Parakeets, motomoto birds,
+                                        smallish
+                                        rain
+                                        forest
+                                        mammals
+                                        wondering through.</p>
+                                </div>
+                                <img src="/assets/images/pages/index/12-2022_client_review.webp" alt=""
+                                    class="masked-image-reverse">
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="review-card">
+                                <div class="content">
+                                    <div class="content-header">
+                                        <h4>DaveWI</h4>
+                                        <p>Charleston, West Virginia</p>
+                                    </div>
+                                    <p class="text">Here in height of rainy season, mid october. Beautiful setting
+                                        in
+                                        the
+                                        jungle,
+                                        walking trails and
+                                        the
+                                        hydroponic garden (mostly greens, herbs). Parakeets, motomoto birds,
+                                        smallish
+                                        rain
+                                        forest
+                                        mammals
+                                        wondering through.</p>
+                                </div>
+                                <img src="/assets/images/pages/index/12-2022_client_review.webp" alt=""
+                                    class="masked-image-reverse">
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="review-card">
+                                <div class="content">
+                                    <div class="content-header">
+                                        <h4>DaveWI</h4>
+                                        <p>Charleston, West Virginia</p>
+                                    </div>
+                                    <p class="text">Here in height of rainy season, mid october. Beautiful setting
+                                        in
+                                        the
+                                        jungle,
+                                        walking trails and
+                                        the
+                                        hydroponic garden (mostly greens, herbs). Parakeets, motomoto birds,
+                                        smallish
+                                        rain
+                                        forest
+                                        mammals
+                                        wondering through.</p>
+                                </div>
+                                <img src="/assets/images/pages/index/12-2022_client_review.webp" alt=""
+                                    class="masked-image-reverse">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </section>
+        <section id="reserve_section">
+            <!-- 1 -->
+            <div class="section-card">
+                <div class="card-image masked-image" data-aos="fade-right" data-aos-anchor-placement="top-center"
+                    data-aos-delay="100">
+                    <img src="/assets/images/pages/index/12-2022_our_reserve.webp" alt="">
+                </div>
+                <div class="content" data-aos="fade-in">
+                    <h2>Our Reserve</h2>
+                    <p>Explore our trails and admire the beautiful wildlife around our own private reserve.</p>
+                    <a href="#" class="section-btn">
+                        Explore our reserve
+                    </a>
+                </div>
+            </div>
+            <!-- 2 -->
+            <div class="section-card-reverse mt-30 overflow-hidden">
+                <div class="card-image masked-image" data-aos="fade-left" data-aos-anchor-placement="top-center"
+                    data-aos-delay="100">
+                    <img src="/assets/images/pages/index/12-2022_sustainability.webp" alt="">
+                </div>
+                <div class="content" data-aos="fade-in">
+                    <h2>Sustainability</h2>
+                    <p>We believe in the healthy interaction with the environment and natural resources.</p>
+                    <a href="#" class="section-btn">
+                        Learn more
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="default-footer">
+        <div class="footer-wrapper">
+            <div class="default-footer-map">
+
+                <div class="footer-header d-flex justify-content-between align-items-center  mb-5 mb-md-3">
+                    <h4 class="align-self-end">We have many activities</h4>
+                    <div class="d-flex align-items-center gap-3 h-fit">
+                        <div class="d-flex align-items-center">
+                            <img src="/assets/images/icons/12-2022_cloud_icon.png" alt="">
+                            <p>20 °C</p>
+                        </div>
+                        <a href="https://facebook.com" title="LINK TO OUR FACEBOOK">
+                            <img class="footer-icon" src="/assets/images/icons/12-2022-facebook_icon_dark.png"
+                                alt="facebook link icon">
+                        </a>
+
+                        <a href="https://tripadvisor.com" title="LINK TO OUR TRIPADVISOR PROFILE">
+                            <img class="footer-icon" src="/assets/images/icons/12-2022-tripadvisor_icon_dark.png"
+                                alt="tripadvisor link icon">
+                        </a>
+                    </div>
+                </div>
+                <div class="map-row row">
+                    <div class="col">
+                        <h5 class="fw-bold">Los Pinos can offer to you</h5>
+                        <ul>
+                            <li>
+                                <a href="">
+                                    Hydroponic Garden
+                                    Trails
+                                </a>
+                            </li>
+                            <li><a href="">
+                                    Kids Playground
+                                </a></li>
+                            <li>
+                                <a href="">
+                                    View Seeing
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h5 class="fw-bold">Monteverde can offer to you</h5>
+                        <ul>
+                            <li><a href="">Monteverde Cloud Forest Biological Reserve</a></li>
+                            <li><a href="">Santa Elena Reserve</a></li>
+                            <li><a href="">Hanging Bridges</a></li>
+                            <li><a href="">Canopy Tour</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-12 col-md mt-3 mt-md-0 ms-md-5">
+                        <h5 class="fw-bold">Los Pinos - Cabins & Gardens</h5>
+                        <p>Monteverde, Puntarenas, Costa Rica</p>
+                        <p>Phone Number: (506)2645-5252 </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </footer>
+</body>
+
+</html>

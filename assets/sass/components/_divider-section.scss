@@ -1,0 +1,13 @@
+.divider-section {
+	@include flex-center;
+	@include h-fit-content;
+	@include mobile {
+		@include flex-center(true);
+	}
+	background-color: color("green");
+	width: 100%;
+	min-height: 10rem;
+	overflow: hidden;
+
+	padding: 1.2rem 0;
+}

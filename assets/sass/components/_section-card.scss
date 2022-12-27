@@ -1,0 +1,96 @@
+.section-card {
+	@include flex;
+	@include mobile {
+		margin-left: auto;
+		gap: 1rem;
+		margin-bottom: 4rem;
+		@include flex-center(true);
+	}
+
+	position: relative;
+	height: fit-content;
+	margin-top: 3rem;
+	// gap: 1rem;
+
+	.masked-image {
+		@include mask(url("/assets/images/card_img_mask.png"), 120%, right);
+		@include mobile {
+			-webkit-mask-size: 100%;
+			-webkit-mask-position: center;
+		}
+	}
+
+	.card-image {
+		@include mobile {
+			@include flex-center();
+			width: 100vw;
+		}
+
+		height: fit-content;
+		width: 50vw;
+		overflow: auto;
+
+		img {
+			@include mobile {
+				max-width: unset;
+				max-height: pxToRem(300);
+			}
+
+			width: 100%;
+			height: 100%;
+			max-height: pxToRem(530);
+			max-width: 50vw;
+
+			object-fit: cover;
+		}
+	}
+	.content {
+		@include flex-center(true);
+		@include mobile {
+			margin: 0;
+			width: 80%;
+		}
+		@include tablet-portrait {
+			width: 70%;
+		}
+		width: 50%;
+		margin-right: $horizontal-margin;
+		h2 {
+			@include section-title;
+			text-align: center;
+		}
+		p {
+			font-size: font-size("medium");
+			margin: 1rem 0;
+			line-height: 2rem;
+			text-align: center;
+		}
+	}
+}
+
+.section-card-reverse {
+	@extend .section-card;
+	@include mobile {
+		@include flex-center(true);
+	}
+
+	flex-direction: row-reverse;
+
+	.masked-image {
+		@include mask(url("/assets/images/card_img_mask_reverse.png"), cover, 0);
+
+		@include mobile {
+			-webkit-mask-size: 100%;
+			-webkit-mask-position: 0;
+		}
+	}
+
+	.content {
+		@include mobile {
+			margin: 0;
+		}
+
+		margin-left: $horizontal-margin;
+		margin-right: auto;
+	}
+}

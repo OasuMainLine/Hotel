@@ -1,0 +1,32 @@
+@use "sass:list";
+@use "sass:math";
+
+$plant_sizes: (
+	"xsm": 10rem,
+	"sm": 15rem,
+	"lg": 20rem,
+	"xl": 25rem,
+	"xxl": 30rem,
+);
+
+@each $name, $size in $plant_sizes {
+	.plant-#{$name} {
+		@include tablet {
+			height: math.clamp(10rem, $size - 7rem, 50rem);
+		}
+		@include desktop {
+			height: math.clamp(10rem, $size - 7rem, 50rem);
+		}
+		height: $size;
+	}
+}
+
+.plant {
+	@include mobile {
+		display: none;
+	}
+	@include w-fit-content;
+	position: absolute;
+	object-fit: scale-down;
+	z-index: -10;
+}

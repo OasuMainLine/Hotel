@@ -1,0 +1,17 @@
+.activities {
+	.facts-list {
+		li::before {
+			display: inline-block;
+			content: "-";
+			margin-right: 0.3rem;
+		}
+	}
+
+	.activities-divider {
+		display: block;
+		margin: 3rem 0;
+		height: 2rem;
+		width: 100%;
+		background-color: color("black");
+	}
+}

@@ -1,0 +1,120 @@
+.default-nav {
+	@include flex;
+	@include mobile {
+		top: 0;
+	}
+
+	width: 100%;
+	position: absolute;
+	left: 0;
+	z-index: 2;
+	top: 1rem;
+	align-items: center;
+	max-height: pxToRem(50);
+	background-color: color("black-transparent");
+	.mobile-navbar {
+		@include tablet {
+			display: none;
+		}
+	 
+		@include flex-vertical-center;
+		@include shadow-box(0px 6px 8px 0px rgba(0, 0, 0, 0.6));
+		position: fixed;
+		top: 0;
+		left: 0;
+		justify-content: space-between;
+		height: 5rem;
+		width: 100%;
+		background-color: rgb(4, 154, 59);
+		padding-right: 2rem;
+		padding-left: 2rem;
+		z-index: 2;
+
+		.trigger-label {
+			width: pxToRem(40);
+			height: pxToRem(40);
+		}
+		.logo {
+			// border-radius: 0;
+			height: 4rem;
+			// margin-top: 50%;
+			width: 4rem;
+		}
+	}
+
+	#nav-trigger:checked + .default-nav-links {
+		transform: translateY(9rem);
+	}
+	.default-nav-links {
+		@include tablet {
+			@include flex;
+		}
+		@include mobile {
+			@include flex-center(true);
+			position: fixed;
+			padding-top: 4rem;
+			background-color: color("green");
+			z-index: 1;
+			height: 17rem;
+			gap: 1rem;
+			transform: translateY(-10rem);
+			transition: transform ease-in-out 300ms;
+		}
+
+		padding: 0 5rem;
+		width: 100%;
+		height: fit-content;
+
+		align-items: center;
+		justify-content: center;
+		column-gap: 2rem;
+
+		.link a {
+			color: color("white");
+			text-transform: uppercase;
+			font-weight: bold;
+			font-size: font-size("x-small");
+			display: inline-block;
+			position: relative;
+			&::before {
+				content: "";
+				transition: width ease-in 300ms;
+				display: inline;
+				position: absolute;
+				bottom: 0;
+				width: 0;
+				height: 3px;
+				background-color: color("white");
+			}
+			&:hover::before {
+				width: 100%;
+			}
+		}
+	}
+
+	img.logo {
+		width: pxToRem(70);
+		height: pxToRem(70);
+		padding: 0.5rem;
+		background-color: color("white");
+		border-radius: $border-full;
+	}
+
+	.default-nav-social {
+		@include tablet {
+			@include flex;
+		}
+		display: none;
+
+		margin: 1rem $horizontal-margin 1rem auto;
+
+		ul {
+			height: 100%;
+			width: 100%;
+			display: flex;
+			justify-items: center;
+			align-items: center;
+			column-gap: 1rem;
+		}
+	}
+}

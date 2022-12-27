@@ -1,0 +1,28 @@
+@use "sass:map";
+@use "sass:math";
+@function color($name){
+    @if not map-get($colors, $name){
+        @error "Color con nombre [#{$name}] no está en la variable $colors";
+    }
+    @return map-get($map: $colors, $key: $name);
+}
+
+ 
+@function get-img($url){
+    @return url("assets/images/#{$url}");
+}
+
+@function pxToRem($px){
+    @if math.unit($px) == "px"{
+        @return math.div($px, 16px) * 1rem;
+    }
+    @return #{math.div($px, 16)}rem;
+}
+
+@function font-size($font-size){
+    @if not map-get($font-sizes, $font-size){
+        @error "Tamaño de fuente [#{$font-size} no está en la variable $font-sizes]";
+    }
+
+    @return pxToRem(map-get($map: $font-sizes, $key: $font-size));
+}

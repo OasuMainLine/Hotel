@@ -1,0 +1,15 @@
+.cabins-grid {
+	display: grid;
+	column-gap: 0.3rem;
+	row-gap: 0.5rem;
+	grid-template-columns: repeat(3, min-content);
+	grid-auto-rows: auto;
+	justify-content: center;
+
+	@include mobile {
+		grid-template-columns: min-content;
+	}
+	p {
+		font-size: font-size("medium");
+	}
+}

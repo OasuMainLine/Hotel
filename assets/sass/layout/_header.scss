@@ -1,0 +1,29 @@
+.header {
+	height: 90vh;
+	overflow: hidden;
+
+	.content {
+		margin-top: auto;
+		margin-bottom: 15%;
+
+		@include mobile {
+			@include flex-center(true);
+			height: 100%;
+
+			padding: 0 1rem;
+			padding-bottom: 3rem;
+		}
+		color: color("white");
+		* {
+			text-shadow: 1px 1px 3px color("black");
+		}
+		h1 {
+			font-weight: bold;
+			font-size: font-size("x-large");
+		}
+
+		p {
+			font-size: font-size("smaller");
+		}
+	}
+}

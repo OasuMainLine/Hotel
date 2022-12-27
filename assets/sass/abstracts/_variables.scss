@@ -1,0 +1,196 @@
+@use "sass:map";
+
+$colors: (
+	"white": #fff,
+	"black": #000,
+	"black-transparent": rgb(0 0 0 / 60%),
+	"green": #164b29,
+	"light-green": #32ab5e,
+	"lime": #5cc560,
+	"transparent": rgba(0, 0, 0, 0),
+	"tripadvisor-green": #34e0a1,
+	"facebook-blue": #3b5998,
+	"light-blue": #add8e6,
+);
+
+$font-sizes: (
+	"xx-small": 16px,
+	"x-small": 18px,
+	"smaller": 20px,
+	"small": 22px,
+	"normal": 23px,
+	"medium": 24px,
+	"large": 30px,
+	"larger": 36px,
+	"x-large": 40px,
+	"xx-large": 48px,
+);
+
+$default-font: "Raleway", sans-serif;
+$rufina-font: "Rufina", serif;
+$border-full: 9999px;
+$border-btn: 10px;
+
+$horizontal-margin: 6.938rem;
+
+$card-margin: 0rem;
+
+$icons: (
+	"bed": url("/assets/images/icons/services/001-bed.png"),
+	"people": url("/assets/images/icons/services/002-people.png"),
+	"window": url("/assets/images/icons/services/003-windows.png"),
+	"house": url("/assets/images/icons/services/004-house.png"),
+	"kitchen": url("/assets/images/icons/services/005-kitchen.png"),
+	"dinner": url("/assets/images/icons/services/006-dinner-table.png"),
+	"living": url("/assets/images/icons/services/007-living-room.png"),
+	"shower": url("/assets/images/icons/services/008-shower.png"),
+	"safe": url("/assets/images/icons/services/009-safe-box.png"),
+	"parking": url("/assets/images/icons/services/010-parking.png"),
+	"table": url("/assets/images/icons/services/011-table.png"),
+	"tv": url("/assets/images/icons/services/012-watch-tv.png"),
+	"terrace": url("/assets/images/icons/services/013-terrace.png"),
+	"hairdryer": url("/assets/images/icons/services/014-hairdryer.png"),
+	"bq": url("/assets/images/icons/services/015-barbecue.png"),
+	"accesibility": url("/assets/images/icons/services/016-accesibility.png"),
+	"temperature": url("/assets/images/icons/017-temperature-icon.png"),
+	"forest": url("/assets/images/icons/12-2022-forest-icon.png"),
+	"mountain": url("/assets/images/icons/12-2022-mountain-icon.png"),
+	"binoculars": url("/assets/images/icons/12-2022-binoculars-icon.png"),
+	"hiking": url("/assets/images/icons/12-2022-hiking-icon.png"),
+	"no-camping": url("/assets/images/icons/12-2022-no-camping-icon.png"),
+	"no-remove": url("/assets/images/icons/12-2022_no-remove-icon.png"),
+	"no-feed": url("/assets/images/icons/12-2022-no-feed-icon.png"),
+	"silence": url("/assets/images/icons/12-2022-silence-icon.png"),
+	"no-drones": url("/assets/images/icons/12-2022-no-drones-icon.png"),
+	"no-garbage": url("/assets/images/icons/12-2022-no-garbage-icon.png"),
+	"no-cut": url("/assets/images/icons/12-2022-no-cut-icon.png"),
+	"no-pets": url("/assets/images/icons/12-2022-no-pets-icon.png"),
+	"no-alcohol": url("/assets/images/icons/12-2022-no-alcohol-icon.png"),
+	"rain": url("/assets/images/icons/12-2022-rain-icon.png"),
+	"season": url("/assets/images/icons/12-2022_season-icon.png"),
+	"sunrise": url("/assets/images/icons/12-2022-sunrise-icon.png"),
+	"sunset": url("/assets/images/icons/12-2022-sunset-icon.png"),
+	"map": url("/assets/images/icons/12-2022-map-icon.png"),
+	"drive": url("/assets/images/icons/12-2022-drive-icon.png"),
+	"meeting": url("/assets/images/icons/12-2022_meeting-icon.png"),
+	"award": url("/assets/images/icons/12-2022-award-icon.png"),
+	"sustainability": url("/assets/images/icons/12-2022_sustainability-icon.png"),
+	"family": url("/assets/images/icons/12-2022_family-icon.png"),
+	"empathy": url("/assets/images/icons/12-2022_empathy-icon.png"),
+	"handshake": url("/assets/images/icons/12-2022_handshake-icon.png"),
+	"group": url("/assets/images/icons/12-2022_group-icon.png"),
+	"mission": url("/assets/images/icons/12-2022_mission-icon.png"),
+	"vision": url("/assets/images/icons/12-2022_vision-icon.png"),
+	"canopy": url("/assets/images/icons/12-2022_canopy-icon.png"),
+	"bungee": url("/assets/images/icons/12-2022_bungee_icon.png"),
+	"canoying": url("/assets/images/icons/12-2022_canoying-icon.png"),
+	"horseback": url("/assets/images/icons/12-2022_horse-back.png"),
+	"hiking-alt": url("/assets/images/icons/12-2022_hiking_alt_icon.png"),
+	"birdwatching": url("/assets/images/icons/12-2022_birdwatching_icon.png"),
+	"hanging": url("/assets/images/icons/12-2022_hanging_icon.png"),
+	"coffee": url("/assets/images/icons/12-2022_coffee_icon.png"),
+	"cheese": url("/assets/images/icons/12-2022_cheese_icon.png"),
+	"gallery": url("/assets/images/icons/12-2022_gallery_icon.png"),
+	"painting": url("/assets/images/icons/12-2022_painting_icon.png"),
+	"gondola": url("/assets/images/icons/12-2022_gondola_icon.png"),
+	"trails": url("/assets/images/icons/12-2022_trails_icon.png"),
+);
+
+$services: (
+	"double": (
+		"icon": map-get($icons, "bed"),
+		"text": "1 double + futon",
+	),
+	"queen": (
+		"icon": map-get($icons, "bed"),
+		"text": "1 queen + futon",
+	),
+	"king": (
+		"icon": map-get($icons, "bed"),
+		"text": "1 king + futon",
+	),
+	"3-people": (
+		"icon": map-get($icons, "people"),
+		"text": "1-3 people",
+	),
+	"6-people": (
+		"icon": map-get($icons, "people"),
+		"text": "1-6 people",
+	),
+	"garden": (
+		"icon": map-get($icons, "window"),
+		"text": "Garden",
+	),
+	"forest": (
+		"icon": map-get($icons, "window"),
+		"text": "forest",
+	),
+	"36m": (
+		"icon": map-get($icons, "house"),
+		"text": "36m²",
+	),
+	"46m": (
+		"icon": map-get($icons, "house"),
+		"text": "46m²",
+	),
+	"76m": (
+		"icon": map-get($icons, "house"),
+		"text": "76m²",
+	),
+	"100m": (
+		"icon": map-get($icons, "house"),
+		"text": "100m²",
+	),
+	"142m": (
+		"icon": map-get($icons, "house"),
+		"text": "142m²",
+	),
+	"kitchen": (
+		"icon": map-get($icons, "kitchen"),
+		"text": "Kitchen",
+	),
+	"dinner-room": (
+		"icon": map-get($icons, "dinner"),
+		"text": "Dinner room",
+	),
+	"living-room": (
+		"icon": map-get($icons, "living"),
+		"text": "Living room",
+	),
+	"private-bathroom": (
+		"icon": map-get($icons, "shower"),
+		"text": "Private bathroom",
+	),
+	"parking": (
+		"icon": map-get($icons, "parking"),
+		"text": "Parking",
+	),
+	"cable": (
+		"icon": map-get($icons, "tv"),
+		"text": '32" Led tv cable',
+	),
+	"accesibility": (
+		"icon": map-get($icons, "accesibility"),
+		"text": "accesibility",
+	),
+	"picnic": (
+		"icon": map-get($icons, "table"),
+		"text": "Picnic table",
+	),
+	"terrace": (
+		"icon": map-get($icons, "terrace"),
+		"text": "terrace",
+	),
+	"hairdryer": (
+		"icon": map-get($icons, "hairdryer"),
+		"text": "Hair Dryer",
+	),
+	"BBQ": (
+		"icon": map-get($icons, "bq"),
+		"text": "BBQ Grill",
+	),
+	"security-box": (
+		"icon": map-get($icons, "safe"),
+		"text": "Security box",
+	),
+);

@@ -1,0 +1,56 @@
+.sustainability {
+	.section-card,
+	.section-card-reverse {
+		.content {
+			@include mobile {
+				width: 90% !important;
+			}
+		}
+	}
+	.integration-content {
+		@include flex-center(true);
+		p:first-child {
+			width: 75%;
+			font-size: font-size("medium");
+			text-align: center;
+		}
+		.integrations {
+			@include mobile {
+				flex-direction: column;
+				align-items: center;
+			}
+			@include flex-horizontal-center;
+		}
+		.integration-item {
+			@include flex(true);
+			@include mobile {
+				@include flex-center(true);
+				width: 90%;
+			}
+			gap: 1rem;
+			width: 25%;
+			.integration-title {
+				font-size: font-size("x-small");
+			}
+
+			.integration-text {
+				@include mobile {
+					text-align: center;
+				}
+				font-size: font-size("xx-small");
+			}
+		}
+	}
+
+	.logo-column {
+		@include mobile {
+			@include h-fit-content;
+		}
+
+		div {
+			@include mobile {
+				@include h-fit-content;
+			}
+		}
+	}
+}

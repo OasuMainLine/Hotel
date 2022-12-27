@@ -1,0 +1,23 @@
+.icon-grid {
+	div {
+		width: 100%;
+		height: fit-content;
+		padding: 0 2rem;
+		display: grid;
+		grid-template-columns: repeat(6, min-content);
+		row-gap: 0.2rem;
+		column-gap: 0.6rem;
+		margin-bottom: 0.2rem;
+		grid-auto-rows: max-content;
+		justify-content: center;
+		justify-items: center;
+		align-content: center;
+
+		@include mobile {
+			grid-template-columns: repeat(3, min-content);
+			row-gap: 1rem;
+			column-gap: 0.8rem;
+			margin-bottom: 1rem;
+		}
+	}
+}

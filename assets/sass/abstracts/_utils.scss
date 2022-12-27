@@ -1,0 +1,150 @@
+@use "sass:map";
+@use "sass:math";
+
+$letters: (
+	"l": "left",
+	"r": "right",
+	"t": "top",
+	"b": "bottom",
+);
+
+@for $i from 2 to 5 {
+	$result: math.div(100%, $i);
+
+	.m-1\/#{$i} {
+		margin: $result !important;
+	}
+	.p1\/#{$i} {
+		padding: $result !important;
+	}
+
+	.w-1\/#{$i} {
+		width: $result !important;
+	}
+	.h-1\/#{$i} {
+		height: $result !important;
+	}
+	@each $letter, $name in $letters {
+		.m#{$letter}-1\/#{$i} {
+			margin-#{$name}: $result !important;
+		}
+		.p#{$letter}-1\/#{$i} {
+			padding-#{$name}: $result !important;
+		}
+
+		.#{$letter}-1\/#{$i} {
+			#{$name}: $result !important;
+		}
+
+		.-#{$letter}-1\/#{$i} {
+			#{$name}: $result !important;
+		}
+	}
+}
+@for $i from 6 to 150 {
+	$result: pxToRem($i);
+	.m-#{$i} {
+		margin: $result !important;
+	}
+	.p-#{$i} {
+		padding: $result !important;
+	}
+
+	.w-#{$i} {
+		width: $result;
+	}
+	.h-#{$i} {
+		height: $result;
+	}
+
+	i.icon-size-#{$i} {
+		width: $result !important;
+		height: $result !important;
+	}
+	@each $letter, $name in $letters {
+		.m#{$letter}-#{$i} {
+			margin-#{$name}: $result !important;
+		}
+		.p#{$letter}-#{$i} {
+			padding-#{$name}: $result !important;
+		}
+
+		.#{$letter}-#{$i} {
+			#{$name}: $result !important;
+		}
+
+		.-#{$letter}-#{$i} {
+			#{$name}: pxToRem($i * -1) !important;
+		}
+	}
+}
+
+.h-fit {
+	@include h-fit-content;
+}
+.w-fit {
+	@include w-fit-content;
+}
+.font-raleway {
+	font-family: $default-font;
+}
+
+.font-rufina {
+	font-family: $rufina-font;
+}
+
+.section-title {
+	@include section-title;
+}
+
+.section-title-alt {
+	text-transform: uppercase;
+	color: color("white");
+	font-weight: bold;
+}
+.obj-right {
+	object-position: right;
+}
+
+.obj-left {
+	object-position: left;
+}
+
+.fit-cover {
+	object-fit: cover !important;
+}
+
+.fit-contain {
+	object-fit: contain !important;
+}
+
+.flip-x {
+	scale: -1 1;
+}
+.flip-y {
+	scale: 1 -1;
+}
+@each $iconName, $icon in $icons {
+	i.icon-#{$iconName} {
+		$size: 3rem;
+		width: $size;
+		height: $size;
+		background-image: $icon;
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center;
+		display: inline-block;
+	}
+}
+
+@for $i from 1 to 8 {
+	.span-#{$i} {
+		grid-column: span $i / span $i;
+	}
+}
+
+@each $font-size-name, $font-size in $font-sizes {
+	.fs-#{$font-size-name} {
+		font-size: pxToRem($font-size);
+	}
+}

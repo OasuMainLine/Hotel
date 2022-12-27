@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Rooms and rates page of Los Pinos Lodge">
+    <meta name="keywords" content="travel, monteverde, tourism">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <!-- vendors -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- vendors/ -->
+
+    <script src="/assets/js/main.js" type="module"></script>
+
+    <title>Los pinos | Rooms and Rates</title>
+</head>
+
+<body>
+    <main class="container-fluid p-0 room-rates mb-92 overflow-hidden">
+
+        <!-- HEADER -->
+        <header id="header-section" class="row position-relative header">
+            <!-- NAV -->
+            <nav class="default-nav">
+
+                <div class="mobile-navbar">
+                    <a href="/index.html">
+                        <img class="logo" src="/assets/images/logos/12-2022_Los_Pinos_Logo.jpg" alt="Logo los pinos" />
+                    </a>
+                    <div class="d-flex gap-3 align-items-center">
+
+                        <span class="lan-icon">ES</span>
+
+                        <a href="https://facebook.com" title="LINK TO OUR FACEBOOK">
+                            <i role="img" class="social-icon-facebook">
+                                <img src="/assets/images/icons/12-2022-facebook_icon.png" alt="Facebook Icon Button">
+                            </i>
+                        </a>
+
+
+                        <a href="https://www.tripadvisor.es" title="LINK TO OUR TRIPADVISOR PROFILE">
+                            <i role="img" class="social-icon-tripadvisor">
+                                <img src="/assets/images/icons/12-2022-tripadvisor_icon.png"
+                                    alt="TripAdvisor Icon Button">
+                            </i>
+                        </a>
+
+                        <label class="trigger-label d-md-none" for="nav-trigger">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="white"
+                                class="bi bi-list menu" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                            </svg>
+                        </label>
+
+                    </div>
+
+                </div>
+
+                <input type="checkbox" name="" id="nav-trigger" class="d-none">
+                <ul class="default-nav-links">
+                    <li class="link"><a href="/pages/room_rates.html">Rooms & rates</a></li>
+                    <li class="link"><a href="/pages/reserve.html">Reserve</a></li>
+
+                    <li class="d-none d-md-block">
+                        <a href="/index.html">
+                            <img class="logo" src="/assets/images/logos/12-2022_Los_Pinos_Logo.jpg"
+                                alt="Logo los pinos" />
+                        </a>
+                    </li>
+
+                    <li class="link"><a href="/pages/sustainability.html">Sustainability</a></li>
+                    <li class="link">
+                        <a href="/pages/activities.html">
+                            Activities
+                        </a>
+                    </li>
+
+                </ul>
+
+                <div class="default-nav-social">
+                    <ul>
+                        <li class="lan-icon" aria-label="Language button | Spanish">ES</li>
+                        <li>
+                            <a href="https://facebook.com">
+                                <i role="img" class="social-icon-facebook">
+                                    <img src="/assets/images/icons/12-2022-facebook_icon.png"
+                                        alt="Facebook Icon Button">
+                                </i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.tripadvisor.es">
+                                <i role="img" class="social-icon-tripadvisor">
+                                    <img src="/assets/images/icons/12-2022-tripadvisor_icon.png"
+                                        alt="TripAdvisor Icon Button">
+                                </i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+
+            <!-- HEADER CONTENT -->
+
+            <div class="splide">
+                <div class="splide__track">
+                    <div class="splide__list">
+                        <div class="splide__slide">
+                            <img src="/assets/images/pages/room_rates/12-2022_room_rates_hero.webp" alt="">
+                        </div>
+
+                        <div class="splide__slide">
+                            <img src="/assets/images/pages/room_rates/12-2022_room_rates_hero.webp" alt="">
+                        </div>
+
+                        <div class="splide__slide">
+                            <img src="/assets/images/pages/room_rates/12-2022_room_rates_hero.webp" alt="">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="content col-12 text-center position-relative">
+                <h1>
+                    Superior Cabins
+                </h1>
+                <p>Imagine waking up and being blinded by nature.</p>
+            </div>
+
+            <form class="header-availability-box ">
+                <div class="availability-box-container">
+                    <div class="availability-box-inner">
+                        <label class="title" for="checkin-1">Check In</label>
+                        <div class="date">
+                            <img src="/assets/images/icons/12-2022-calendar_icon.png" alt="Icon de calendario">
+                            <input type="date" name="checkInDate" id="checkin-1" placeholder="-- --, ----">
+                        </div>
+                    </div>
+                    <span class="divider"></span>
+                    <div class="availability-box-inner">
+                        <label class="title" for="checkout-1">Check Out</label>
+                        <div class="date">
+                            <img src="/assets/images/icons/12-2022-calendar_icon.png" alt="Icon de calendario">
+                            <input type="date" name="checkOutDate" id="checkout-1" placeholder="-- --, ----">
+                        </div>
+                    </div>
+
+                </div>
+                <label class="search-btn" href="#" for="submit-date-1">
+                    Search <br> now
+                </label>
+
+                <input type="submit" value="" class="d-none" id="submit-date-1">
+            </form>
+        </header>
+
+
+        <section id="cabins-section" class="row mt-50">
+            <h2 data-aos="fade-in">Our cabins</h2>
+            <p class="col-10 ">All our cabins offer a space where you can spread out and feel
+                completely at ease. We’ll
+                make sure you’ll
+                never want anything else when staying with us.</p>
+            <p>
+                Check the amenities included on each of our cabins:
+            </p>
+
+
+            <!-- STANDARD CABINS -->
+            <div class="section-card" id="standard-cabins">
+                <img src="/assets/images/plants/12-2022_plant4.png" alt="" class="plant plant-sm end-0 top-0 obj-right"
+                    data-aos="fade-left">
+                <div class="splide" data-aos="fade-right" data-aos-anchor-placement="bottom-bottom">
+                    <div class="splide__track">
+                        <div class="splide__list">
+                            <div class="splide__slide">
+
+                                <img src="/assets/images/pages/room_rates/12-2022_standard_cabins.webp" alt="">
+
+                            </div>
+
+                            <div class="splide__slide">
+
+                                <img src="/assets/images/pages/room_rates/12-2022_standard_cabins.webp" alt="">
+
+                            </div>
+
+                            <div class="splide__slide">
+
+                                <img src="/assets/images/pages/room_rates/12-2022_standard_cabins.webp" alt="">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content" data-aos="fade-in">
+                    <h2>STANDARD
+                        CABINS</h2>
+                    <p>
+                        The standard cabins sleeps a family up to three. They include a double bed and a futon. Kitchen
+                        facilities include a microwave, jug, small bar fridge, toaster, crockery, cutlery and cooking
+                        implements. There is a also a TV for your enjoyment and a bathroom with shower and toilet. All
+                        standard cabins have an outdoor view to our gardens.
+
+                    </p>
+                    <a href="#" class="section-btn">
+                        Check availability
+                    </a>
+                </div>
+            </div>
+
+            <div class="icon-grid">
+                <div>
+                    <i role="img" class="i-double"></i>
+                    <i role="img" class="i-3-people" aria-label="Space for a maximum of 3 people"></i>
+                    <i role="img" class="i-garden"
+                        aria-label="This is a cabin with an outdoor view to a beatiful garden"></i>
+                    <i role="img" class="i-36m" aria-label="The cabin has an overall area of 36 square meters"></i>
+                    <i role="img" class="i-kitchen" aria-label="The cabin includes a built-in kitchen"></i>
+                    <i role="img" class="i-dinner-room" aria-label="The cabin has a dinner room"></i>
+                </div>
+
+                <div>
+                    <i role="img" class="i-living-room" aria-label="The cabin has a living room"></i>
+                    <i role="img" class="i-private-bathroom"
+                        aria-label="The cabin has a private bathroom in each room"></i>
+                </div>
+            </div>
+
+
+
+            <!-- JUNIOR CABINS -->
+
+            <div class="section-card-reverse" id="junior-cabins">
+                <img src="/assets/images/plants/12-2022_plant3.png" alt=""
+                    class="plant plant-sm -t-140 start-0 obj-left" data-aos="fade-right">
+                <div class="splide" data-aos="fade-left" data-aos-anchor-placement="bottom-bottom">
+                    <div class="splide__track">
+                        <div class="splide__list">
+                            <div class="splide__slide">
+
+                                <img src="/assets/images/pages/index/12-2022_cabins_1.webp" alt="">
+
+                            </div>
+
+                            <div class="splide__slide">
+
+                                <img src="/assets/images/pages/index/12-2022_cabins_1.webp" alt="">
+
+                            </div>
+
+                            <div class="splide__slide">
+
+                                <img src="/assets/images/pages/index/12-2022_cabins_1.webp" alt="">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content" data-aos="fade-in">
+                    <h2>JUNIOR
+                        CABINS</h2>
+                    <p>
+                        The junior cabins sleeps a family up to three. They include a double bed and a futon. Kitchen
+                        facilities include a microwave, jug, small bar fridge, toaster, crockery, cutlery and cooking
+                        implements. There is a also a TV for your enjoyment and a bathroom with shower and toilet. All
+                        junior cabins have an outdoor view to the forest
+
+                    </p>
+                    <a href="#" class="section-btn">
+                        Check availability
+                    </a>
+                </div>
+            </div>
+
+            <div class="icon-grid">
+                <div>
+
+                    <i role="img" class="i-queen" aria-label="Includes 1 futon + a queen sized bed"></i>
+                    <i role="img" class="i-3-people" aria-label="Space for a maximum of 3 people"></i>
+                    <i role="img" class="i-forest" aria-label="The cabin includes an oudoor view of the forest"></i>
+                    <i role="img" class="i-46m" aria-label="The cabin has an overall area of 46 square meters"></i>
+                    <i role="img" class="i-kitchen" aria-label="The cabin includes a built-in kitchen"></i>
+                    <i role="img" class="i-dinner-room" aria-label="The cabin has a dinner room"></i>
+
+                </div>
+                <div>
+                    <i role="img" class="i-living-room" aria-label="The cabin has a living room"></i>
+                    <i role="img" class="i-private-bathroom"
+                        aria-label="The cabin has a private bathroom in each room"></i>
+                    <i role="img" class="i-security-box" aria-label="The cabin incorporate a security box inside"></i>
+                    <i role="img" class="i-parking" aria-label="The cabin has a parking space"></i>
+                    <i role="img" class="i-picnic" aria-label="This cabin counts with a picnic spot"></i>
+                    <i role="img" class="i-cable" aria-label="This cabin has TV cable"></i>
+                </div>
+
+                <div class="gap-0">
+                    <i role="img" class="i-accesibility"
+                        aria-label="This cabin is adapted for differently abled people"></i>
+                </div>
+            </div>
+
+            <!-- SUPERIOR CABINS -->
+            <div class="section-card" id="superior-cabins">
+                <img src="/assets/images/plants/12-2022_plant7.png" alt=""
+                    class="plant -t-120 end-0 obj-right fit-cover" data-aos="fade-left">
+                <div class="splide" data-aos="fade-right" data-aos-anchor-placement="bottom-bottom">
+                    <div class="splide__track">
+                        <div class="splide__list">
+                            <div class="splide__slide">
+
+                                <img src="/assets/images/pages/room_rates/12-2022_superior_cabins.webp" alt="">
+
+                            </div>
+
+                            <div class="splide__slide">
+
+                                <img src="/assets/images/pages/room_rates/12-2022_superior_cabins.webp" alt="">
+
+                            </div>
+
+                            <div class="splide__slide">
+
+                                <img src="/assets/images/pages/room_rates/12-2022_superior_cabins.webp" alt="">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content" data-aos="fade-in">
+                    <h2>SUPERIOR
+                        CABINS</h2>
+                    <p>
+                        The superior cabins sleeps a family up to three. They include a double bed and a futon. Kitchen
+                        facilities include a microwave, jug, small bar fridge, toaster, crockery, cutlery and cooking
+                        implements. There is a also a TV for your enjoyment and a bathroom with shower and toilet. All
+                        superior cabins have an outdoor view to the forest.
+
+                    </p>
+                    <a href="#" class="section-btn">
+                        Check availability
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="icon-grid">
+                <div>
+                    <i role="img" class="i-king" aria-label="Includes 1 futon + a king sized bed"></i>
+                    <i role="img" class="i-3-people" aria-label="Space for a maximum of 3 people"></i>
+                    <i role="img" class="i-forest" aria-label="The cabin includes an oudoor view of the forest"></i>
+                    <i role="img" class="i-76m" aria-label="The cabin has an overall area of 76 square meters"></i>
+                    <i role="img" class="i-kitchen" aria-label="The cabin includes a built-in kitchen"></i>
+                    <i role="img" class="i-dinner-room" aria-label="The cabin has a dinner room"></i>
+                </div>
+                <div>
+                    <i role="img" class="i-living-room" aria-label="The cabin has a living room"></i>
+                    <i role="img" class="i-private-bathroom"
+                        aria-label="The cabin has a private bathroom in each room"></i>
+                    <i role="img" class="i-security-box" aria-label="There's a security box inside this cabin"></i>
+                    <i role="img" class="i-parking" aria-label="The cabin "></i>
+                    <i role="img" class="i-picnic" aria-label="This cabin counts with a picnic spot"></i>
+                    <i role="img" class="i-cable" aria-label="This cabin has TV cable"></i>
+                </div>
+
+                <div>
+                    <i role="img" class="i-terrace" aria-label="This cabin has a beatiful terrace"></i>
+                    <i role="img" class="i-hairdryer" aria-label="This cabin has a haidryer"></i>
+                    <i role="img" class="i-BBQ" aria-label="This cabin counts with a Barbeque grill"></i>
+                </div>
+            </div>
+
+            <!-- FAMILY CABINS -->
+            <div class="section-card-reverse" id="family-cabins">
+                <img src="/assets/images/plants/12-2022_plant5.png" alt="" class="plant -t-130 start-0 obj-left"
+                    data-aos="fade-right">
+                <div class="splide" data-aos="fade-left" data-aos-anchor-placement="bottom-bottom">
+                    <div class="splide__track">
+                        <div class="splide__list">
+                            <div class="splide__slide">
+
+                                <img src="/assets/images/pages/room_rates/12-2022_family_cabins.webp" alt="">
+
+                            </div>
+
+                            <div class="splide__slide">
+
+                                <img src="/assets/images/pages/room_rates/12-2022_family_cabins.webp" alt="">
+
+                            </div>
+
+                            <div class="splide__slide">
+
+                                <img src="/assets/images/pages/room_rates/12-2022_family_cabins.webp" alt="">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content" data-aos="fade-in">
+                    <h2>Family Cabins</h2>
+                    <p>
+                        The family cabins sleeps a family up to six. They include a double bed and a futon. Kitchen
+                        facilities include a microwave, jug, small bar fridge, toaster, crockery, cutlery and cooking
+                        implements. There is a also a TV for your enjoyment and a bathroom with shower and toilet. All
+                        family cabins have an outdoor view to tour gardens.
+
+                    </p>
+                    <a href="#" class="section-btn">
+                        Check availability
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="icon-grid">
+                <div>
+                    <i role="img" class="i-queen" aria-label="Includes 1 futon + a queen sized bed"></i>
+                    <i role="img" class="i-6-people" aria-label="Space for a maximum of 6 people"></i>
+                    <i role="img" class="i-forest" aria-label="The cabin includes an oudoor view of the forest"></i>
+                    <i role="img" class="i-100m" aria-label="The cabin has an overall area of 100 square meters"></i>
+                    <i role="img" class="i-kitchen" aria-label="The cabin includes a built-in kitchen"></i>
+                    <i role="img" class="i-dinner-room" aria-label="The cabin has a dinner room"></i>
+                </div>
+
+                <div>
+                    <i role="img" class="i-living-room" aria-label="The cabin has a living room"></i>
+                    <i role="img" class="i-private-bathroom"
+                        aria-label="The cabin has a private bathroom in each room"></i>
+                    <i role="img" class="i-security-box" aria-label="There's a security box inside this cabin"></i>
+                    <i role="img" class="i-parking" aria-label="The cabin "></i>
+                    <i role="img" class="i-picnic" aria-label="This cabin counts with a picnic spot"></i>
+                    <i role="img" class="i-cable" aria-label="This cabin has TV cable"></i>
+                </div>
+
+                <div class="gap-0">
+                    <i role="img" class="i-terrace" aria-label="This cabin has a beatiful terrace"></i>
+                </div>
+            </div>
+            <!-- FAMILY DELUXE CABINS -->
+            <div class="section-card" id="family-deluxe-cabins">
+                <img src="/assets/images/plants/12-2022_plant6.png" alt=""
+                    class="plant end-0 -t-120 obj-right fit-contain" data-aos="fade-left">
+                <div class="splide" data-aos="fade-right" data-aos-anchor-placement="bottom-bottom">
+                    <div class="splide__track">
+                        <div class="splide__list">
+                            <div class="splide__slide">
+
+                                <img src="/assets/images/pages/room_rates/12-2022_family_deluxe_cabins.webp" alt="">
+
+                            </div>
+
+                            <div class="splide__slide">
+
+                                <img src="/assets/images/pages/room_rates/12-2022_family_deluxe_cabins.webp" alt="">
+
+                            </div>
+
+                            <div class="splide__slide">
+
+                                <img src="/assets/images/pages/room_rates/12-2022_family_deluxe_cabins.webp" alt="">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content" data-aos="fade-in">
+                    <h2>FAMILY DELUXE <br>
+                        CABINS</h2>
+                    <p>
+                        The family deluxe cabins sleeps a family up to six. They include a double bed and a futon.
+                        Kitchen facilities include a microwave, jug, small bar fridge, toaster, crockery, cutlery and
+                        cooking implements. There is a also a TV for your enjoyment and a bathroom with shower and
+                        toilet. All family deluxe cabins have an outdoor view to the forest.
+
+                    </p>
+                    <a href="#" class="section-btn">
+                        Check availability
+                    </a>
+                </div>
+            </div>
+
+            <div class="icon-grid">
+                <div>
+                    <i role="img" class="i-king" aria-label="Includes 1 futon + a king sized bed"></i>
+                    <i role="img" class="i-6-people" aria-label="Space for a maximum of 6 people"></i>
+                    <i role="img" class="i-forest" aria-label="The cabin includes an oudoor view of the forest"></i>
+                    <i role="img" class="i-142m" aria-label="The cabin has an overall area of 142 square meters"></i>
+                    <i role="img" class="i-kitchen" aria-label="The cabin includes a built-in kitchen"></i>
+                    <i role="img" class="i-dinner-room" aria-label="The cabin has a dinner room"></i>
+                </div>
+
+                <div>
+                    <i role="img" class="i-living-room" aria-label="The cabin has a living room"></i>
+                    <i role="img" class="i-private-bathroom"
+                        aria-label="The cabin has a private bathroom in each room"></i>
+                    <i role="img" class="i-security-box" aria-label="There's a security box inside this cabin"></i>
+                    <i role="img" class="i-parking" aria-label="The cabin "></i>
+                    <i role="img" class="i-picnic" aria-label="This cabin counts with a picnic spot"></i>
+                    <i role="img" class="i-cable" aria-label="This cabin has TV cable"></i>
+                </div>
+
+                <div>
+                    <i role="img" class="i-terrace" aria-label="This cabin has a beatiful terrace"></i>
+                    <i role="img" class="i-hairdryer" aria-label="This cabin has a haidryer"></i>
+                    <i role="img" class="i-accesibility"
+                        aria-label="This cabin is adapted for differently abled people"></i>
+                </div>
+            </div>
+        </section>
+
+        <section id="reviews-section" class="my-5">
+            <h2 class="section-title text-center" data-aos="fade-in">
+                Reviews from <br> our clients
+            </h2>
+
+            <div class="splide review-carousel position-relative overflow-hidden" data-splide='{"gap": "10rem"}'
+                aria-label="Reviews of our clients" data-aos="fade-in" data-aos-anchor-placement="bottom-bottom">
+                <img src="/assets/images/plants/12-2022_plant1.png" alt=""
+                    class="plant -l-20 top-0 obj-left d-none d-md-block">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            <div class="review-card">
+                                <div class="content">
+                                    <div class="content-header">
+                                        <h4>DaveWI</h4>
+                                        <p>Charleston, West Virginia</p>
+                                    </div>
+                                    <p class="text">Here in height of rainy season, mid october. Beautiful setting
+                                        in
+                                        the
+                                        jungle,
+                                        walking trails and
+                                        the
+                                        hydroponic garden (mostly greens, herbs). Parakeets, motomoto birds,
+                                        smallish
+                                        rain
+                                        forest
+                                        mammals
+                                        wondering through.</p>
+                                </div>
+                                <img src="/assets/images/pages/index/12-2022_client_review.webp" alt=""
+                                    class="masked-image-reverse">
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="review-card">
+                                <div class="content">
+                                    <div class="content-header">
+                                        <h4>DaveWI</h4>
+                                        <p>Charleston, West Virginia</p>
+                                    </div>
+                                    <p class="text">Here in height of rainy season, mid october. Beautiful setting
+                                        in
+                                        the
+                                        jungle,
+                                        walking trails and
+                                        the
+                                        hydroponic garden (mostly greens, herbs). Parakeets, motomoto birds,
+                                        smallish
+                                        rain
+                                        forest
+                                        mammals
+                                        wondering through.</p>
+                                </div>
+                                <img src="/assets/images/pages/index/12-2022_client_review.webp" alt=""
+                                    class="masked-image-reverse">
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="review-card">
+                                <div class="content">
+                                    <div class="content-header">
+                                        <h4>DaveWI</h4>
+                                        <p>Charleston, West Virginia</p>
+                                    </div>
+                                    <p class="text">Here in height of rainy season, mid october. Beautiful setting
+                                        in
+                                        the
+                                        jungle,
+                                        walking trails and
+                                        the
+                                        hydroponic garden (mostly greens, herbs). Parakeets, motomoto birds,
+                                        smallish
+                                        rain
+                                        forest
+                                        mammals
+                                        wondering through.</p>
+                                </div>
+                                <img src="/assets/images/pages/index/12-2022_client_review.webp" alt=""
+                                    class="masked-image-reverse">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="default-footer">
+        <div class="footer-wrapper">
+            <div class="default-footer-map">
+
+                <div class="footer-header d-flex justify-content-between align-items-center  mb-5 mb-md-3">
+                    <h4 class="align-self-end">We have many activities</h4>
+                    <div class="d-flex align-items-center gap-3 h-fit">
+                        <div class="d-flex align-items-center">
+                            <img src="/assets/images/icons/12-2022_cloud_icon.png" alt="">
+                            <p>20 °C</p>
+                        </div>
+                        <a href="https://facebook.com">
+                            <img class="footer-icon" src="/assets/images/icons/12-2022-facebook_icon_dark.png" alt="">
+                        </a>
+
+                        <a href="https://tripadvisor.com">
+                            <img class="footer-icon" src="/assets/images/icons/12-2022-tripadvisor_icon_dark.png"
+                                alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="map-row row">
+                    <div class="col">
+                        <p class="fw-bold">Los Pinos can offer to you</p>
+                        <ul>
+                            <li>
+                                <a href="">
+                                    Hydroponic Garden
+                                    Trails
+                                </a>
+                            </li>
+                            <li><a href="">
+                                    Kids Playground
+                                </a></li>
+                            <li>
+                                <a href="">
+                                    View Seeing
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <p class="fw-bold">Monteverde can offer to you</p>
+                        <ul>
+                            <li><a href="">Monteverde Cloud Forest Biological Reserve</a></li>
+                            <li><a href="">Santa Elena Reserve</a></li>
+                            <li><a href="">Hanging Bridges</a></li>
+                            <li><a href="">Canopy Tour</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-12 col-md mt-3 mt-md-0 ms-md-5">
+                        <p class="fw-bold">Los Pinos - Cabins & Gardens</p>
+                        <p>Monteverde, Puntarenas, Costa Rica</p>
+                        <p>Phone Number: (506)2645-5252 </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+.section-grid {
+	@include w-fit-content;
+	@include mobile {
+		@include flex(true);
+	}
+	display: grid;
+	height: 100%;
+	grid-template-columns: repeat(3, max-content);
+	grid-auto-rows: auto;
+	column-gap: 3rem;
+	row-gap: 2rem;
+	.grid-item {
+		@include flex-vertical-center;
+		gap: 0.5rem;
+		width: max-content;
+		.grid-item-content {
+			@include flex(true);
+
+			* {
+				font-size: font-size("x-small");
+				color: color("white");
+			}
+			.item-title {
+				font-weight: bold;
+			}
+		}
+	}
+}

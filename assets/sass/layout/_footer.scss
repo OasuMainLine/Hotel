@@ -1,0 +1,63 @@
+.default-footer {
+	@include flex(true);
+	width: 100%;
+	background: url("/assets/images/12-2022_footer_bg.png") no-repeat;
+	background-size: cover;
+	height: fit-content;
+
+	* {
+		font-family: $default-font;
+	}
+	&::before,
+	&::after {
+		content: "";
+		display: inline-block;
+		width: 100%;
+		height: 2rem;
+		background-color: black;
+		padding: 0;
+		margin: 0;
+	}
+
+	.footer-wrapper {
+		@include flex;
+		justify-content: space-around;
+		margin: 0 $horizontal-margin;
+		padding: 5rem 0;
+		@include mobile {
+			flex-direction: column;
+			margin: 0;
+			padding: 2rem 1rem;
+		}
+
+		*:not(h4) {
+			font-size: font-size("smaller");
+		}
+		.default-footer-map {
+			.footer-header {
+				height: 7rem;
+			}
+			h4 {
+				font-weight: 800;
+				font-size: font-size("medium");
+			}
+			.map-row {
+				padding-left: 2rem;
+
+				a {
+					color: color("black");
+					text-decoration: underline;
+
+					&:hover {
+						text-shadow: 0 0 6px color("white");
+					}
+				}
+			}
+		}
+	}
+}
+
+.footer-icon {
+	width: pxToRem(32);
+	height: pxToRem(32);
+}

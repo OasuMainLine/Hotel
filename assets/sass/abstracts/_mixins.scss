@@ -1,0 +1,109 @@
+@mixin w-fit-content {
+	width: -moz-fit-content;
+	width: fit-content;
+}
+
+@mixin h-fit-content {
+	height: -moz-fit-content;
+	height: fit-content;
+}
+@mixin image($dimension, $fit: cover) {
+	width: $dimension;
+	height: $dimension;
+	object-fit: $fit;
+}
+@mixin flex($column: false) {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	@if $column {
+		flex-direction: column;
+	}
+}
+@mixin flex-vertical-center($column: false) {
+	@include flex($column);
+	-webkit-flex-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+}
+@mixin flex-horizontal-center($column: false) {
+	@include flex($column);
+	justify-content: center;
+	-webkit-box-align: center;
+}
+@mixin flex-center($column: false) {
+	@include flex-horizontal-center($column);
+	@include flex-vertical-center($column);
+}
+
+@mixin after {
+	content: "";
+
+	display: inline-block;
+}
+@mixin mask($source, $size: cover, $position: left, $important: false) {
+	$importantSymbol: if($important==true, !important, null);
+	mask-image: $source $importantSymbol;
+	-webkit-mask-image: $source $importantSymbol;
+	mask-repeat: no-repeat $importantSymbol;
+	-webkit-mask-repeat: no-repeat $importantSymbol;
+	mask-size: $size $importantSymbol;
+	-webkit-mask-size: $size $importantSymbol;
+	mask-position: $position $importantSymbol;
+	-webkit-mask-position: $position $importantSymbol;
+}
+
+@mixin shadow-box($shadow) {
+	box-shadow: $shadow;
+	-webkit-box-shadow: $shadow;
+	-moz-box-shadow: $shadow;
+}
+
+@mixin section-title {
+	@include flex-vertical-center(true);
+	@include mobile {
+		text-align: center;
+	}
+	font-size: font-size("xx-large");
+	font-family: $rufina-font;
+
+	gap: 0.5rem;
+	&::after {
+		@include after;
+		background-color: color("light-green");
+		width: pxToRem(118);
+		height: pxToRem(5);
+	}
+}
+
+//Responsive
+
+@mixin mobile {
+	@media only screen and (max-width: 600px) {
+		@content;
+	}
+}
+@mixin tablet {
+	@media only screen and (min-width: 768px) {
+		@content;
+	}
+}
+@mixin tablet-portrait {
+	@media only screen and (min-width: 768px) and (orientation: portrait) {
+		@content;
+	}
+}
+@mixin desktop {
+	@media only screen and (min-width: 992px) and (max-width: 1300px) {
+		@content;
+	}
+}
+
+@mixin desktop-x {
+	@media only screen and (min-width: 1300px) {
+		@content;
+	}
+}

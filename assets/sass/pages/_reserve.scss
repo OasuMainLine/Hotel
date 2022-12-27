@@ -1,0 +1,60 @@
+.reserve {
+	#about-section {
+		@include flex-vertical-center(true);
+		@include mobile {
+			margin: 0 2rem;
+		}
+		row-gap: 1rem;
+
+		.about-content {
+			@include flex-vertical-center(true);
+			@include mobile {
+				padding: 0;
+			}
+			gap: 2rem;
+			padding: 0 $horizontal-margin;
+			text-align: center;
+			font-size: font-size("medium");
+			p:last-child {
+				@include mobile {
+					width: 100%;
+				}
+				width: 60%;
+			}
+		}
+	}
+
+	.map-img {
+		@include mobile {
+			width: 100% !important;
+		}
+	}
+
+	#culture-section {
+		.culture-content {
+			@include flex-center();
+			@include mobile {
+				gap: 1rem;
+			}
+			gap: 4rem;
+
+			margin: 4rem 0;
+			.culture-text {
+				@include mobile {
+					width: 75%;
+				}
+				font-size: font-size("medium");
+				text-align: center;
+				width: 50%;
+			}
+			.figure-img {
+				@include mobile {
+					width: 50%;
+				}
+				width: 25%;
+
+				// object-fit: scale-down;
+			}
+		}
+	}
+}

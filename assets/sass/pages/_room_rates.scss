@@ -1,0 +1,20 @@
+.room-rates {
+	#cabins-section {
+		text-align: center;
+		@include flex-vertical-center(true);
+		gap: 0.5rem;
+
+		h2 {
+			@include section-title;
+		}
+
+		p {
+			font-size: font-size("medium");
+		}
+	}
+
+	#reviews-section {
+		@include flex-vertical-center(true);
+		gap: 3rem;
+	}
+}

@@ -1,0 +1,117 @@
+.availability-box-wrapper {
+	border-radius: 20px;
+	border: 1px color("black") solid;
+	@include w-fit-content;
+	@include h-fit-content;
+	.availability-box {
+		margin: 2rem;
+	}
+}
+.availability-box {
+	@include w-fit-content;
+	@include h-fit-content;
+	@include flex;
+
+	background-color: color("white");
+
+	padding-left: 1rem;
+
+	* {
+		font-size: font-size("x-small");
+	}
+
+	.availability-box-container {
+		@include flex;
+		@include mobile {
+			flex-direction: column;
+		}
+		border: none;
+
+		.divider {
+			@include mobile {
+				height: pxToRem(8);
+				width: 90%;
+			}
+			background-color: color("lime");
+			height: 100%;
+			width: pxToRem(8);
+		}
+
+		.availability-box-inner {
+			@include flex-horizontal-center(true);
+			padding: 1rem;
+			.title {
+				font-weight: bold;
+			}
+			.date {
+				display: flex;
+				align-items: flex-end;
+				column-gap: 0.3rem;
+				img {
+					width: pxToRem(34);
+					height: pxToRem(34);
+				}
+
+				input {
+					@include mobile {
+						width: 6rem;
+						max-width: fit-content;
+					}
+					outline: none;
+					width: fit-content;
+					max-width: 8rem;
+					font-family: $default-font !important;
+					&::-webkit-calendar-picker-indicator,
+					&::-webkit-inner-spin-button {
+						display: none;
+						-webkit-appearance: none;
+					}
+
+					&::placeholder {
+						color: color("black-transparent");
+					}
+
+					&:not(:placeholder-shown) {
+						border: none;
+					}
+				}
+			}
+		}
+	}
+
+	.search-btn {
+		@include flex-horizontal-center(true);
+		padding: 0 1rem;
+		background-color: color("green");
+		color: color("white");
+		font-family: $default-font;
+		font-weight: bold;
+		text-transform: uppercase;
+		width: 7rem;
+		margin: 0;
+		line-height: 1.5rem;
+
+		gap: 0.2rem;
+		cursor: pointer;
+
+		 
+		&::before {
+			content: "";
+			display: inline-block;
+			background-color: white;
+			width: 90%;
+			height: 0.5rem;
+			margin-bottom: 0.5rem;
+		}
+	}
+}
+
+.header-availability-box {
+	@extend .availability-box;
+	@include mobile {
+		bottom: 0;
+		border: 1px black solid;
+	}
+	position: absolute;
+	bottom: 3rem;
+}

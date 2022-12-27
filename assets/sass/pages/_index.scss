@@ -1,0 +1,72 @@
+.index {
+	#about-section {
+		@include flex-vertical-center(true);
+
+		row-gap: 1rem;
+		@include mobile {
+			margin: 0 2rem;
+		}
+
+		.logo {
+			width: pxToRem(192);
+			height: pxToRem(192);
+			img {
+				@include image(100%, contain);
+			}
+		}
+		.about-content {
+			@include mobile {
+				padding: 0;
+			}
+			padding: 0 $horizontal-margin;
+			text-align: center;
+			font-size: font-size("medium");
+		}
+
+		.certificates {
+			@include flex-horizontal-center;
+			column-gap: 0.7rem;
+			img {
+				@include image(pxToRem(78), contain);
+			}
+		}
+	}
+
+	.icon-divider {
+		padding: 1rem 0;
+		width: 100%;
+		z-index: -2;
+		ul {
+			@include flex-horizontal-center;
+			@include mobile {
+				gap: 3rem;
+			}
+			li {
+				@include flex-vertical-center;
+
+				@include mobile {
+					flex-direction: column;
+				}
+
+				column-gap: 1rem;
+				h3 {
+					font-size: font-size("medium");
+				}
+				img {
+					@include image(pxToRem(42), contain);
+				}
+			}
+		}
+		color: color("white");
+	}
+
+	#cabins-section {
+		p {
+			font-size: font-size("medium");
+		}
+	}
+
+	#review-section {
+		@include flex-horizontal-center;
+	}
+}

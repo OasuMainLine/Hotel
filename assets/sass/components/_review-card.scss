@@ -1,0 +1,75 @@
+.review-carousel {
+	.review-card {
+		@include flex;
+		@include w-fit-content;
+		@include mobile {
+			flex-direction: column-reverse;
+			margin: 0 0;
+		}
+
+		.content {
+			@include flex-horizontal-center(true);
+			@include mobile {
+				align-items: flex-start;
+
+				margin: 0;
+				width: 100%;
+			}
+
+			width: min-content;
+			align-items: flex-end;
+			margin-left: 5rem;
+
+			.content-header {
+				text-align: end;
+				@include mobile {
+					text-align: center;
+					width: 100%;
+					margin-top: 1rem;
+				}
+				h4 {
+					font-weight: bold;
+					font-size: font-size("normal");
+				}
+				p {
+					font-size: font-size("smaller");
+				}
+			}
+
+			.text {
+				height: 50%;
+				width: 50%;
+				text-align: center;
+				margin-top: 5%;
+				font-size: font-size("small");
+				font-style: italic;
+				line-height: 1.2rem;
+				min-width: pxToRem(230);
+				@include mobile {
+					font-size: font-size("xx-small");
+					width: 100%;
+					margin-bottom: 2rem;
+				}
+			}
+			.text::before {
+				content: open-quote;
+			}
+			.text::after {
+				content: close-quote;
+			}
+		}
+		img {
+			@include mask(url("/assets/images/card_img_mask.png"), contain, center);
+			@include mobile {
+				@include mask(none);
+				width: 100%;
+				height: 50vw;
+			}
+			height: 55vh;
+			width: 35vw;
+			object-fit: cover;
+			max-width: pxToRem(600);
+			max-height: pxToRem(400);
+		}
+	}
+}

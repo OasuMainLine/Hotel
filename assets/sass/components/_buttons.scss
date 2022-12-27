@@ -1,0 +1,13 @@
+.section-btn {
+	@include w-fit-content;
+	background-color: color("green");
+	color: color("white");
+	font-weight: bold;
+	padding: 0.5rem;
+	text-align: center;
+	font-size: font-size("medium");
+	border-radius: $border-btn;
+	&:hover {
+		color: color("white");
+	}
+}

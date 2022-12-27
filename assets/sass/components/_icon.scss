@@ -1,0 +1,30 @@
+@use "sass:map";
+
+@mixin icon($img, $text) {
+	@include flex-center(true);
+	height: pxToRem(100);
+	width: pxToRem(90);
+	&::before {
+		content: "";
+		display: inline-block;
+		min-width: 50%;
+		min-height: 50%;
+		background: $img no-repeat center;
+		background-size: contain;
+	}
+	&::after {
+		content: $text;
+		display: inline-block;
+		font-size: font-size("xx-small");
+		max-height: 25%;
+		font-family: $default-font;
+		font-weight: bold;
+		text-transform: uppercase;
+	}
+}
+
+@each $serviceName, $service in $services {
+	.i-#{$serviceName} {
+		@include icon(map-get($service, "icon"), map-get($service, "text"));
+	}
+}
