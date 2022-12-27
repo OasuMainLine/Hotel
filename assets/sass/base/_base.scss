@@ -1,1 +1,10 @@
 @import "resets";
+
+body {
+	overflow: hidden;
+	position: relative;
+}
+
+body.loaded {
+	overflow: auto;
+}

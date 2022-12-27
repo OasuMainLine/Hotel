@@ -19393,6 +19393,15 @@ li {
   margin: 0;
 }
 
+body {
+  overflow: hidden;
+  position: relative;
+}
+
+body.loaded {
+  overflow: auto;
+}
+
 h1, .h1 {
   font-family: "Raleway", sans-serif;
 }
@@ -21184,6 +21193,115 @@ p {
   font-size: 1.5rem;
 }
 
+.loading-splash {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  -webkit-box-align: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column;
+  -webkit-flex-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  position: absolute;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  background: #164b29;
+  width: 100%;
+  height: 100vh;
+}
+.loading-splash .loading-icon-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  -webkit-box-align: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  position: relative;
+  width: 12.5rem;
+  height: 12.5rem;
+  padding: 1rem;
+  border-radius: 9999px;
+  z-index: 3;
+}
+.loading-splash .loading-icon-wrapper::before {
+  display: inline-block;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 12.5rem;
+  height: 12.5rem;
+  background-color: #5cc560;
+  animation: pulse ease-in-out 1.2s infinite;
+  border-radius: 9999px;
+  z-index: -1;
+}
+.loading-splash .loading-icon-wrapper::after {
+  display: inline-block;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 12.5rem;
+  height: 12.5rem;
+  background-color: #fff;
+  border-radius: 9999px;
+  z-index: 1;
+}
+.loading-splash .loading-icon {
+  width: 80%;
+  height: 80%;
+  z-index: 3;
+  object-fit: contain;
+}
+
+.loading-splash.hidden {
+  animation: hide 500ms ease-in 1 forwards;
+}
+
+@keyframes hide {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+    pointer-events: none;
+  }
+}
+@keyframes pulse {
+  0% {
+    scale: 0.5;
+    opacity: 1;
+    border-radius: 9999px;
+  }
+  100% {
+    opacity: 0;
+    scale: 1.7;
+    border-radius: 9999px;
+  }
+}
 .default-nav {
   display: -webkit-box;
   display: -webkit-flex;
